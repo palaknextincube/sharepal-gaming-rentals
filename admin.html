@@ -223,6 +223,17 @@
 
     .btn-action:hover { background: var(--primary-dark); }
 
+    .btn-outline {
+      background: #ffffff;
+      color: var(--text-main);
+      border: 1.5px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      background: #f1f5f9;
+      border-color: var(--text-muted);
+    }
+
     /* Content */
     .admin-content {
       padding: 32px;
@@ -287,6 +298,29 @@
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cat-filter-pills {
+      display: flex;
+      gap: 6px;
+    }
+
+    .cat-pill {
+      padding: 5px 12px;
+      border-radius: 99px;
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .cat-pill.active {
+      background: var(--text-main);
+      color: #ffffff;
+      border-color: var(--text-main);
     }
 
     .search-box {
@@ -296,7 +330,7 @@
       background: #f1f5f9;
       padding: 6px 12px;
       border-radius: 6px;
-      width: 280px;
+      width: 260px;
     }
 
     .search-box input {
@@ -360,17 +394,21 @@
     .badge-confirmed { background: #e0f2fe; color: #0369a1; }
     .badge-tag { background: #fef3c7; color: #b45309; }
 
-    .action-btn {
-      padding: 4px 8px;
-      border-radius: 4px;
+    .btn-stock-toggle {
+      padding: 4px 10px;
+      border-radius: 6px;
       border: 1px solid var(--border);
       background: #ffffff;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       cursor: pointer;
+      transition: all 0.2s;
     }
 
-    .action-btn:hover { background: #f1f5f9; }
+    .btn-stock-toggle:hover {
+      background: #f1f5f9;
+      border-color: var(--text-main);
+    }
 
     /* JSON Viewer */
     .json-code-box {
@@ -403,7 +441,7 @@
             <i data-lucide="gamepad-2"></i>
             <span>Products</span>
           </div>
-          <span class="menu-count" id="count-products-badge">23</span>
+          <span class="menu-count" id="count-products-badge">43</span>
         </button>
       </li>
       <li>
@@ -446,7 +484,7 @@
     <div class="sidebar-footer">
       <p>Database Engine: <strong>MongoDB + Mongoose</strong></p>
       <a href="/" target="_blank">
-        <i data-lucide="external-link"></i> View Customer Storefront
+        <i data-lucide="external-link"></i> Open Storefront
       </a>
     </div>
   </aside>
@@ -456,7 +494,7 @@
     <header class="admin-topbar">
       <div class="topbar-title">
         <h1 id="view-title">Products Collection</h1>
-        <p id="view-subtitle">Browse and manage all gaming consoles and pricing</p>
+        <p id="view-subtitle">Browse and manage all gaming, photography, outdoor, and entertainment gear</p>
       </div>
 
       <div class="topbar-actions">
@@ -476,7 +514,7 @@
         <div class="stat-box">
           <div class="stat-info">
             <h4>Total Products</h4>
-            <div class="stat-value" id="stat-products">23</div>
+            <div class="stat-value" id="stat-products">43</div>
           </div>
           <div class="stat-icon"><i data-lucide="package"></i></div>
         </div>
@@ -512,6 +550,7 @@
 
   <script>
     let currentTab = 'products';
+    let activeProductCategory = 'all';
     let dbData = { products: [], orders: [], reviews: [], faqs: [], votes: 10000 };
 
     async function loadDatabase() {
@@ -534,7 +573,6 @@
         const voteRes = await (await fetch('/api/votes/portal')).json();
         dbData.votes = voteRes.votes || 10000;
 
-        // Update counts
         document.getElementById('stat-products').textContent = dbData.products.length;
         document.getElementById('stat-orders').textContent = dbData.orders.length;
         document.getElementById('stat-reviews').textContent = dbData.reviews.length;
@@ -557,16 +595,79 @@
       renderCurrentTab();
     }
 
+    function filterCategory(cat) {
+      activeProductCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(p => {
+        p.classList.toggle('active', p.dataset.cat === cat);
+      });
+      renderCurrentTab();
+    }
+
+    async function toggleProductStock(id, currentStatus) {
+      try {
+        const res = await fetch(`/api/products/${id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ out_of_stock: !currentStatus })
+        });
+        if (res.ok) {
+          const item = dbData.products.find(p => p.id === id);
+          if (item) item.out_of_stock = !currentStatus;
+          renderCurrentTab();
+        }
+      } catch (e) {
+        alert('Could not update stock status');
+      }
+    }
+
+    function exportOrdersCsv() {
+      if (dbData.orders.length === 0) {
+        alert('No orders to export!');
+        return;
+      }
+      const headers = ['Order Ref', 'Customer Name', 'Phone', 'City', 'Duration', 'Total Amount', 'Status', 'Date'];
+      const rows = dbData.orders.map(o => [
+        o.order_ref,
+        `"${o.customer_name}"`,
+        `"${o.customer_phone}"`,
+        o.city,
+        `${o.rental_days} Days`,
+        o.total_amount,
+        o.status,
+        o.createdAt || o.created_at
+      ]);
+      const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement('a');
+      link.setAttribute('href', encodedUri);
+      link.setAttribute('download', `sharepal_orders_${Date.now()}.csv`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
     function renderCurrentTab() {
       const container = document.getElementById('panel-container');
       const title = document.getElementById('view-title');
       const subtitle = document.getElementById('view-subtitle');
 
       if (currentTab === 'products') {
+        let filtered = [...dbData.products];
+        if (activeProductCategory !== 'all') {
+          filtered = filtered.filter(p => p.super_cat === activeProductCategory || p.category === activeProductCategory);
+        }
+
         title.textContent = 'Products Collection';
-        subtitle.textContent = `Showing all ${dbData.products.length} gaming gadgets stored in database`;
+        subtitle.textContent = `Showing ${filtered.length} products stored in database`;
         container.innerHTML = `
           <div class="table-header-toolbar">
+            <div class="cat-filter-pills">
+              <button class="cat-pill ${activeProductCategory === 'all' ? 'active' : ''}" data-cat="all" onclick="filterCategory('all')">All (${dbData.products.length})</button>
+              <button class="cat-pill ${activeProductCategory === 'gaming' ? 'active' : ''}" data-cat="gaming" onclick="filterCategory('gaming')">Gaming</button>
+              <button class="cat-pill ${activeProductCategory === 'photography' ? 'active' : ''}" data-cat="photography" onclick="filterCategory('photography')">Photography</button>
+              <button class="cat-pill ${activeProductCategory === 'outdoor' ? 'active' : ''}" data-cat="outdoor" onclick="filterCategory('outdoor')">Outdoor</button>
+              <button class="cat-pill ${activeProductCategory === 'entertainment' ? 'active' : ''}" data-cat="entertainment" onclick="filterCategory('entertainment')">Entertainment</button>
+            </div>
             <div class="search-box">
               <i data-lucide="search" style="width:16px; color:#94a3b8;"></i>
               <input type="text" placeholder="Filter products..." oninput="filterTable(this.value, 'product-row')">
@@ -581,11 +682,11 @@
                 <th>Rating</th>
                 <th>Booked</th>
                 <th>Status</th>
-                <th>Tag</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              ${dbData.products.map(p => `
+              ${filtered.map(p => `
                 <tr class="product-row" data-search="${p.name.toLowerCase()}">
                   <td style="font-family:var(--font-mono); font-weight:600; color:#64748b;">#${p.id}</td>
                   <td>
@@ -605,7 +706,9 @@
                     </span>
                   </td>
                   <td>
-                    ${p.tag ? `<span class="badge badge-tag">${p.tag}</span>` : '-'}
+                    <button class="btn-stock-toggle" onclick="toggleProductStock(${p.id}, ${p.out_of_stock})">
+                      Toggle Stock
+                    </button>
                   </td>
                 </tr>
               `).join('')}
@@ -625,6 +728,12 @@
           `;
         } else {
           container.innerHTML = `
+            <div class="table-header-toolbar">
+              <span style="font-size:13px; font-weight:700;">Total Orders: ${dbData.orders.length}</span>
+              <button class="btn-action btn-outline" onclick="exportOrdersCsv()">
+                <i data-lucide="download"></i> Export CSV
+              </button>
+            </div>
             <table>
               <thead>
                 <tr>
