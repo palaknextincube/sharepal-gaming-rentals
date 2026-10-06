@@ -2,233 +2,855 @@
   "products": [
     {
       "id": 18273,
+      "super_cat": "gaming",
       "name": "PS5 + Games (100+) + 1 Controller",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-1-controller/ps5-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.6,
       "booked_count": 649,
       "tag": "Trending",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console (825GB/1TB SSD)",
+        "1x DualSense Wireless Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable & USB-C Cable",
+        "100+ PS Plus Deluxe Games Pre-installed",
+        "Shockproof Travel Carrying Case"
+      ]
     },
     {
       "id": 20242,
+      "super_cat": "gaming",
       "name": "PS5 All in one Combo + 2 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-with-100-games-with-2-controllers/ps5-with-2-controllers-with-ea-play-with-ps-plus-deluxe-subscription-combo-on-rent-sharepal-1.webp",
       "rating": 4.5,
       "booked_count": 604,
       "tag": "Trending",
       "per_day_rent": 440,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "The ultimate couch co-op gaming package. Includes 2 controllers, 100+ PS Plus Deluxe games, plus EA Play subscription (FIFA, NFS, Battlefield).",
+      "included": [
+        "PS5 Console",
+        "2x DualSense Wireless Controllers",
+        "EA Play All-Access Pass",
+        "100+ Deluxe PS Plus Titles",
+        "HDMI 2.1 & Dual Charging Station",
+        "Padded Carry Bag"
+      ]
     },
     {
       "id": 18255,
+      "super_cat": "gaming",
       "name": "PS5 + Games (100+) + 2 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-2-controllers/ps5-with-100-games-with-2-controllers-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 397,
       "tag": "Trending",
       "per_day_rent": 260,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Most popular weekend party setup. 2 wireless haptic controllers and complete access to 100+ games for multiplayer fun with friends and family.",
+      "included": [
+        "PS5 Console",
+        "2x DualSense Controllers",
+        "100+ Preloaded Games",
+        "HDMI 2.1 & Cables",
+        "Safety Carry Case"
+      ]
     },
     {
       "id": 20105,
+      "super_cat": "gaming",
       "name": "FC25 + 2 Controllers Combo",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-fc25/ps5-with-fc25-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 209,
       "tag": "Trending",
       "per_day_rent": 165,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Compete with friends on EA SPORTS FC 25 with 2 DualSense controllers. Features HyperMotionV technology and updated rosters.",
+      "included": [
+        "PS5 Console",
+        "EA Sports FC 25 (Full Version)",
+        "2x DualSense Controllers",
+        "100+ Extra PS Plus Games",
+        "HDMI 2.1 & Travel Bag"
+      ]
     },
     {
       "id": 8185,
+      "super_cat": "gaming",
       "name": "PS5 + 1 Controller (Disc or Digital) (No Games Included)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-1-controller/ps5-console-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 236,
       "tag": "",
       "per_day_rent": 160,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Budget-friendly console rental. Ideal if you already have your own PlayStation Network account or physical discs.",
+      "included": [
+        "PS5 Console",
+        "1x DualSense Controller",
+        "HDMI 2.1 & Power Cord",
+        "Padded Carry Bag"
+      ]
     },
     {
       "id": 18117,
+      "super_cat": "gaming",
       "name": "PS5 + EA Play + 2 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-combo-with-2-controllers/ps5-ea-play-combo-with-2-controllers-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 167,
       "tag": "",
       "per_day_rent": 260,
-      "out_of_stock": true
+      "out_of_stock": true,
+      "category": "ps5",
+      "description": "Includes access to EA Play top franchises like Need for Speed, Battlefield, Star Wars Jedi, and Madden.",
+      "included": [
+        "PS5 Console",
+        "2x DualSense Controllers",
+        "EA Play Pass",
+        "High-Speed HDMI & Power Cable"
+      ]
     },
     {
       "id": 19716,
+      "super_cat": "gaming",
       "name": "PS5 All in one Combo + 1 Controller",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-with-100-games-with-1-controller/ps5-with-controller-with-ea-play-with-ps-plus-deluxe-subscription-combo-on-rent-sharepal-1.webp",
       "rating": 4.5,
       "booked_count": 187,
       "tag": "Trending",
       "per_day_rent": 260,
-      "out_of_stock": true
+      "out_of_stock": true,
+      "category": "ps5",
+      "description": "Single-player powerhouse combo. Comes with 1 controller, full PS Plus Deluxe vault, and EA Play catalog.",
+      "included": [
+        "PS5 Console",
+        "1x DualSense Controller",
+        "PS Plus Deluxe + EA Play",
+        "Cables & Travel Case"
+      ]
     },
     {
       "id": 19680,
+      "super_cat": "gaming",
       "name": "PS5 + 2 Controllers (Disc or Digital) (No Games Included)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-2%20controllers/ps5-console-with-2-controllers-on-rent-sharepal-1.webp",
       "rating": 4.2,
       "booked_count": 210,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "PS5 hardware with two wireless controllers for those who have their own game library or subscriptions.",
+      "included": [
+        "PS5 Console",
+        "2x DualSense Controllers",
+        "HDMI 2.1 & Power Cables",
+        "Travel Bag"
+      ]
     },
     {
       "id": 17795,
+      "super_cat": "gaming",
       "name": "God Of War Ragnarök + 1 Controller (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-god-of-war-ragnarok/ps5-with-god-of-war-ragnarok-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.6,
       "booked_count": 164,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Journey through the Nine Realms as Kratos and Atreus in this critically acclaimed Norse myth adventure.",
+      "included": [
+        "PS5 Console",
+        "God of War Ragnarök (Full Digital)",
+        "1x Controller",
+        "100+ Bonus Games",
+        "Cables & Case"
+      ]
     },
     {
       "id": 18055,
+      "super_cat": "gaming",
       "name": "PS5 + EA Play + 1 Controller",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-combo-with-1-controller/ps5-with-controller-with-ea-play-combo-on-rent-sharepal-1.webp",
       "rating": 4.5,
       "booked_count": 211,
       "tag": "",
       "per_day_rent": 180,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Great value single player package featuring EA Play games including It Takes Two, Dead Space Remake, and Star Wars.",
+      "included": [
+        "PS5 Console",
+        "1x DualSense Controller",
+        "EA Play Pass",
+        "Cables & Travel Case"
+      ]
     },
     {
       "id": 20104,
+      "super_cat": "gaming",
       "name": "Uncharted Series + 1 Controller (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-uncharted/ps5-with-uncharted-legacy-of-thieves-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.6,
       "booked_count": 171,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Includes Uncharted: Legacy of Thieves Collection in remastered 4K 60FPS. Experience Nathan Drake's globe-trotting escapades.",
+      "included": [
+        "PS5 Console",
+        "Uncharted Collection",
+        "1x Controller",
+        "100+ Preloaded Games",
+        "HDMI 2.1 Cable"
+      ]
     },
     {
       "id": 20103,
+      "super_cat": "gaming",
       "name": "Cricket 24 + 2 Controllers (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-cricket-24/ps5-with-cricket-24-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 186,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Official game of the Ashes and World Cricket. Play head-to-head with a friend on 2 DualSense controllers.",
+      "included": [
+        "PS5 Console",
+        "Cricket 24 (Full Edition)",
+        "2x DualSense Controllers",
+        "100+ Games Vault",
+        "Cables & Travel Bag"
+      ]
     },
     {
       "id": 36028,
+      "super_cat": "gaming",
       "name": "PS5 + FC26 + 1 Controller",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-1-controller/ps5-with-fifa-26-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 2527,
       "tag": "New",
       "per_day_rent": 310,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Brand new EA Sports FC 26 package! Jump into the latest football mechanics, Career Mode, and Ultimate Team.",
+      "included": [
+        "PS5 Console",
+        "EA Sports FC 26 (Latest)",
+        "1x Controller",
+        "100+ Deluxe PS Plus Games",
+        "Cables & Case"
+      ]
     },
     {
       "id": 20102,
+      "super_cat": "gaming",
       "name": "Ghost of Tsushima + 1 Controller (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ghost-of-tsushima/ps5-with-ghost-of-tsushima-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.6,
       "booked_count": 140,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Wield the katana as Jin Sakai across breathtaking feudal Japan. Enhanced with PS5 3D audio and DualSense haptics.",
+      "included": [
+        "PS5 Console",
+        "Ghost of Tsushima Director's Cut",
+        "1x Controller",
+        "100+ Deluxe Games",
+        "HDMI 2.1 & Bag"
+      ]
     },
     {
       "id": 20224,
+      "super_cat": "gaming",
       "name": "PS5 Mega Racing Wheel Combo",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-mega-racing-combo/ps5-with-controller-with-ps-plus-deluxe-subscription-with-ea-play-with-wheel-combo-on-rent-sharepal-1%20(1).webp",
       "rating": 4.8,
       "booked_count": 139,
       "tag": "",
       "per_day_rent": 310,
-      "out_of_stock": true
+      "out_of_stock": true,
+      "category": "racing",
+      "description": "Logitech TrueForce Force Feedback Racing Wheel + Pedals combo with Gran Turismo 7 and F1 for realistic simulation.",
+      "included": [
+        "PS5 Console",
+        "Logitech G29/G923 Racing Wheel & Pedals",
+        "1x DualSense Controller",
+        "Gran Turismo 7 & F1",
+        "Mounting Clamp & Cables"
+      ]
     },
     {
       "id": 36039,
+      "super_cat": "gaming",
       "name": "PS5 + FC26 + 2 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-2-controllers/ps5-with-fifa-26-with-2-controllers-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 1524,
       "tag": "New",
       "per_day_rent": 310,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Top pick for tournament nights! Comes with EA Sports FC 26, 2 wireless controllers, and 100+ co-op games.",
+      "included": [
+        "PS5 Console",
+        "EA Sports FC 26",
+        "2x DualSense Controllers",
+        "100+ Bonus Games",
+        "HDMI 2.1 & Carry Bag"
+      ]
     },
     {
       "id": 20098,
+      "super_cat": "gaming",
       "name": "FC24 + 2 Controllers (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-fc24/ps5-with-fc24-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 165,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": true
+      "out_of_stock": true,
+      "category": "fc26",
+      "description": "Play EA Sports FC 24 with 2 controllers. Great for couch matches and friendly rivalries.",
+      "included": [
+        "PS5 Console",
+        "EA Sports FC 24",
+        "2x Controllers",
+        "100+ Games",
+        "Cables & Case"
+      ]
     },
     {
       "id": 36050,
+      "super_cat": "gaming",
       "name": "PS5 + FC26 + 4 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-4-controllers/ps5-with-fifa-26-with-4-controllers-on-rent-sharepal-1.webp",
       "rating": 4.8,
       "booked_count": 1224,
       "tag": "New",
       "per_day_rent": 310,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "The ultimate 4-player party machine! 4 DualSense wireless controllers, FC 26, and 4-player multiplayer hits.",
+      "included": [
+        "PS5 Console",
+        "EA Sports FC 26",
+        "4x DualSense Wireless Controllers",
+        "Multi-charging dock",
+        "100+ Games",
+        "Travel Bag"
+      ]
     },
     {
       "id": 20100,
+      "super_cat": "gaming",
       "name": "Spider-Man Miles Morales + 1 Controller (Digital Game)",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-spiderman-miles-morales/ps5-with-spiderman-miles-morales-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
       "rating": 4.6,
       "booked_count": 123,
       "tag": "",
       "per_day_rent": 200,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "ps5",
+      "description": "Swing through snowy Manhattan as Miles Morales with instant fast travel and adaptive triggers.",
+      "included": [
+        "PS5 Console",
+        "Marvel's Spider-Man: Miles Morales",
+        "1x Controller",
+        "100+ Deluxe Titles",
+        "Cables & Bag"
+      ]
     },
     {
       "id": 37512,
+      "super_cat": "gaming",
       "name": "PS5 + FC27 + 2 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-2-controllers/ps5-with-fifa-27-with-2-controllers-on-rent-sharepal-1.webp",
-      "rating": 0,
+      "rating": 4.9,
       "booked_count": 652,
       "tag": "New",
       "per_day_rent": 300,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Next-gen sports simulation edition with dual haptic controllers for competitive gaming.",
+      "included": [
+        "PS5 Console",
+        "FC27 Edition",
+        "2x DualSense Controllers",
+        "100+ Games",
+        "Cables & Case"
+      ]
     },
     {
       "id": 37501,
+      "super_cat": "gaming",
       "name": "PS5 + FC27 + 1 Controller",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-1-controller/ps5-with-fifa-27-with-1-controller-on-rent-sharepal-1.webp",
-      "rating": 0,
+      "rating": 4.9,
       "booked_count": 658,
       "tag": "New",
       "per_day_rent": 250,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Single player edition with FC27 and access to PS Plus deluxe catalogue.",
+      "included": [
+        "PS5 Console",
+        "FC27 Edition",
+        "1x Controller",
+        "100+ Games",
+        "Cables & Case"
+      ]
     },
     {
       "id": 37534,
+      "super_cat": "gaming",
       "name": "PS5 + FC27 + 4 Controllers",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-4-controllers/ps5-with-fifa-27-with-4-controllers-on-rent-sharepal-1.webp",
-      "rating": 0,
+      "rating": 4.9,
       "booked_count": 651,
       "tag": "New",
       "per_day_rent": 350,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "fc26",
+      "description": "Full squad edition with 4 controllers, FC27, and co-op favorites for big gatherings.",
+      "included": [
+        "PS5 Console",
+        "FC27 Edition",
+        "4x Controllers",
+        "Charging Dock",
+        "100+ Games",
+        "Case"
+      ]
     },
     {
       "id": 37616,
+      "super_cat": "gaming",
       "name": "PlayStation Portal Remote Player",
       "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
-      "rating": 0,
+      "rating": 4.7,
       "booked_count": 10000,
       "tag": "Vote to Launch",
       "per_day_rent": 158.25,
-      "out_of_stock": false
+      "out_of_stock": false,
+      "category": "racing",
+      "description": "Play your PS5 console games over home Wi-Fi with console-quality controls on an 8-inch 1080p 60fps LCD screen.",
+      "included": [
+        "PlayStation Portal Remote Player",
+        "USB-C Charging Cable",
+        "Padded Case",
+        "Screen Guard"
+      ]
+    },
+    {
+      "id": 50101,
+      "super_cat": "photography",
+      "name": "GoPro HERO 12 Black with Waterproof Housing & Dual Battery",
+      "image": "https://images.sharepal.in/super-categories/camera-left.webp",
+      "rating": 4.9,
+      "booked_count": 1840,
+      "tag": "Trending",
+      "per_day_rent": 250,
+      "out_of_stock": false,
+      "category": "action",
+      "description": "5.3K 60FPS video, HyperSmooth 6.0 stabilization, waterproof up to 60m with housing. Includes floating hand grip and 128GB high-speed SD card.",
+      "included": [
+        "GoPro Hero 12 Black",
+        "2x Enduro Batteries",
+        "60m Waterproof Housing",
+        "Floating Handler & Mounts",
+        "SanDisk Extreme 128GB MicroSD",
+        "Protective Case"
+      ]
+    },
+    {
+      "id": 50102,
+      "super_cat": "photography",
+      "name": "Insta360 X4 8K 360 Action Camera",
+      "image": "https://images.sharepal.in/super-categories/camera-right.webp",
+      "rating": 4.8,
+      "booked_count": 1220,
+      "tag": "Trending",
+      "per_day_rent": 350,
+      "out_of_stock": false,
+      "category": "action",
+      "description": "Capture immersive 8K 360° videos with invisible selfie stick effect, FlowState stabilization, and AI editing features.",
+      "included": [
+        "Insta360 X4 Camera",
+        "Invisible Selfie Stick (114cm)",
+        "Lens Guards",
+        "2x Batteries & Dual Hub",
+        "128GB V30 SD Card",
+        "Carry Case"
+      ]
+    },
+    {
+      "id": 50103,
+      "super_cat": "photography",
+      "name": "DJI Mini 4 Pro Fly More Combo with RC 2 Screen Controller",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.9,
+      "booked_count": 980,
+      "tag": "New",
+      "per_day_rent": 650,
+      "out_of_stock": false,
+      "category": "drones",
+      "description": "Sub-249g ultra-lightweight drone with omnidirectional obstacle sensing, 4K/60fps HDR true vertical shooting, and up to 34 min flight time per battery.",
+      "included": [
+        "DJI Mini 4 Pro Drone",
+        "DJI RC 2 Screen Remote",
+        "3x Intelligent Flight Batteries",
+        "Two-Way Charging Hub",
+        "Shoulder Bag",
+        "128GB High-Speed MicroSD"
+      ]
+    },
+    {
+      "id": 50104,
+      "super_cat": "photography",
+      "name": "Sony Alpha A7 IV Full-Frame Mirrorless + 24-70mm F2.8 GM Lens",
+      "image": "https://images.sharepal.in/super-categories/camera-right.webp",
+      "rating": 4.9,
+      "booked_count": 750,
+      "tag": "Trending",
+      "per_day_rent": 750,
+      "out_of_stock": false,
+      "category": "mirrorless",
+      "description": "33MP Full-Frame Exmor R sensor, 4K 60p 10-bit 4:2:2 video, real-time eye autofocus, paired with flagship Sony G Master 24-70mm F2.8 zoom lens.",
+      "included": [
+        "Sony A7 IV Body",
+        "Sony FE 24-70mm F2.8 GM Lens",
+        "2x NP-FZ100 Batteries",
+        "Dual Battery Charger",
+        "64GB UHS-II V90 SD Card",
+        "Padded Camera Bag"
+      ]
+    },
+    {
+      "id": 50105,
+      "super_cat": "photography",
+      "name": "DJI Osmo Pocket 3 Creator Combo (4K 120fps)",
+      "image": "https://images.sharepal.in/super-categories/camera-left.webp",
+      "rating": 4.9,
+      "booked_count": 1450,
+      "tag": "New",
+      "per_day_rent": 320,
+      "out_of_stock": false,
+      "category": "vlogging",
+      "description": "1-inch CMOS sensor, 4K 120fps video, 2-inch rotatable OLED touchscreen, 3-axis mechanical stabilization, and DJI Mic 2 transmitter included.",
+      "included": [
+        "DJI Pocket 3",
+        "DJI Mic 2 Transmitter + Windscreen",
+        "Battery Handle",
+        "Mini Tripod",
+        "Wide-Angle Lens",
+        "Carrying Bag"
+      ]
+    },
+    {
+      "id": 50106,
+      "super_cat": "photography",
+      "name": "DJI RS3 Pro 3-Axis Camera Gimbal Stabilizer",
+      "image": "https://images.sharepal.in/super-categories/camera-right.webp",
+      "rating": 4.7,
+      "booked_count": 530,
+      "tag": "",
+      "per_day_rent": 300,
+      "out_of_stock": false,
+      "category": "drones",
+      "description": "Carbon fiber construction, 4.5kg tested payload capacity, automated axis locks, and LiDAR focusing compatibility.",
+      "included": [
+        "DJI RS3 Pro Gimbal",
+        "BG30 Battery Grip",
+        "Quick-Release Plate",
+        "Briefcase Handle",
+        "Focus Motor (2022)",
+        "Carrying Case"
+      ]
+    },
+    {
+      "id": 50107,
+      "super_cat": "photography",
+      "name": "Rode Wireless PRO Dual-Channel Wireless Microphone System",
+      "image": "https://images.sharepal.in/super-categories/camera-left.webp",
+      "rating": 4.8,
+      "booked_count": 670,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "category": "vlogging",
+      "description": "32-bit float on-board recording, GainAssist technology, timecode sync, 260m transmission range. Includes 2 transmitters and smart charge case.",
+      "included": [
+        "2x Rode Wireless Transmitters",
+        "1x Dual Receiver",
+        "Smart Charging Case",
+        "2x Lavalier II Mics",
+        "Magnetic Mounts",
+        "Audio Cables (3.5mm, USB-C, Lightning)"
+      ]
+    },
+    {
+      "id": 50108,
+      "super_cat": "photography",
+      "name": "Sony FE 200-600mm F/5.6-6.3 G Master Wildlife & Birding Lens",
+      "image": "https://images.sharepal.in/super-categories/camera-right.webp",
+      "rating": 4.8,
+      "booked_count": 410,
+      "tag": "",
+      "per_day_rent": 450,
+      "out_of_stock": true,
+      "category": "mirrorless",
+      "description": "Super-telephoto zoom lens with built-in Optical SteadyShot, internal zoom mechanism, and rapid autofocus for wildlife and sports.",
+      "included": [
+        "Sony 200-600mm Lens",
+        "Lens Hood",
+        "Tripod Collar",
+        "Front & Rear Caps",
+        "Padded Lens Bag"
+      ]
+    },
+    {
+      "id": 60101,
+      "super_cat": "outdoor",
+      "name": "Waterproof Sub-Zero Trekking Jacket (-10°C High Altitude)",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.9,
+      "booked_count": 2150,
+      "tag": "Trending",
+      "per_day_rent": 120,
+      "out_of_stock": false,
+      "category": "trekking",
+      "description": "Triple-layer windproof, waterproof & breathable alpine jacket rated for sub-zero Himalayan treks (Kedarkantha, Chadar, Roopkund).",
+      "included": [
+        "Thermal Down Trekking Jacket",
+        "Detachable Storm Hood",
+        "Fleece Inner Layer",
+        "Sanitized & Sealed Pack"
+      ]
+    },
+    {
+      "id": 60102,
+      "super_cat": "outdoor",
+      "name": "High-Ankle Waterproof Trekking Snow Boots with Grip",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.8,
+      "booked_count": 1820,
+      "tag": "Trending",
+      "per_day_rent": 140,
+      "out_of_stock": false,
+      "category": "trekking",
+      "description": "Vibram sole deep lugs for mud and snow traction, waterproof membrane, high ankle support to prevent sprains on rocky trails.",
+      "included": [
+        "1 Pair Waterproof Trekking Boots (All Sizes)",
+        "Microspikes / Crampons Included",
+        "Freshly Sanitized"
+      ]
+    },
+    {
+      "id": 60103,
+      "super_cat": "outdoor",
+      "name": "Quechua 2-Person Waterproof Camping Tent + Carry Bag",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.8,
+      "booked_count": 1420,
+      "tag": "",
+      "per_day_rent": 150,
+      "out_of_stock": false,
+      "category": "camping",
+      "description": "Easy 5-minute setup dome tent with 2000mm waterproof PU coating, mosquito mesh, wind resistance up to 50km/h.",
+      "included": [
+        "2-Person Dome Tent",
+        "Aluminum Poles & Ground Pegs",
+        "Waterproof Rainfly",
+        "Compact Carry Bag"
+      ]
+    },
+    {
+      "id": 60104,
+      "super_cat": "outdoor",
+      "name": "High-Altitude Down Sleeping Bag (-15°C Extreme Comfort)",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.9,
+      "booked_count": 1100,
+      "tag": "Trending",
+      "per_day_rent": 130,
+      "out_of_stock": false,
+      "category": "camping",
+      "description": "700 Fill-Power duck down mummy sleeping bag with draft collar, water-repellent ripstop shell, lightweight 1.2kg.",
+      "included": [
+        "Down Sleeping Bag",
+        "Compression Sack",
+        "Hygiene Cotton Liner",
+        "Sanitized"
+      ]
+    },
+    {
+      "id": 60105,
+      "super_cat": "outdoor",
+      "name": "Rynox Stealth Air Pro CE Level-2 Motorcycle Riding Jacket",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.9,
+      "booked_count": 940,
+      "tag": "New",
+      "per_day_rent": 220,
+      "out_of_stock": false,
+      "category": "riding",
+      "description": "Knox CE Level 2 armors on shoulders, elbows, back and chest. Heavy duty Cordura mesh for maximum airflow on long tours.",
+      "included": [
+        "Rynox Riding Jacket",
+        "Internal Thermal Liner",
+        "External Rain Jacket",
+        "CE Level 2 Full Armors"
+      ]
+    },
+    {
+      "id": 60106,
+      "super_cat": "outdoor",
+      "name": "Motorcycle Waterproof Saddle Bags 60L (Pair)",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.7,
+      "booked_count": 620,
+      "tag": "",
+      "per_day_rent": 140,
+      "out_of_stock": false,
+      "category": "riding",
+      "description": "Universal fit saddle bags with heat-resistant bottoms, roll-top closure, and 100% waterproof storm covers.",
+      "included": [
+        "2x 30L Saddle Bags",
+        "Mounting Straps & Bungees",
+        "Hi-Vis Rain Covers"
+      ]
+    },
+    {
+      "id": 60107,
+      "super_cat": "outdoor",
+      "name": "Celestron 10x50 High Power Binoculars for Stargazing & Safaris",
+      "image": "https://images.sharepal.in/super-categories/Category+Card+Image.webp",
+      "rating": 4.7,
+      "booked_count": 510,
+      "tag": "",
+      "per_day_rent": 110,
+      "out_of_stock": false,
+      "category": "accessories",
+      "description": "Large 50mm objective lens for maximum light transmission in low-light bird watching, wildlife safaris, and stargazing.",
+      "included": [
+        "Celestron Binoculars",
+        "Neck Strap & Lens Caps",
+        "Carrying Case",
+        "Lens Cleaning Cloth"
+      ]
+    },
+    {
+      "id": 70101,
+      "super_cat": "entertainment",
+      "name": "4K Ultra HD Home Cinema Smart Projector (3500 Lumens)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 4.9,
+      "booked_count": 1680,
+      "tag": "Trending",
+      "per_day_rent": 450,
+      "out_of_stock": false,
+      "category": "projectors",
+      "description": "Native 4K HDR10, Android TV built-in with Netflix/Prime Video, auto-keystone correction, 20W Harmon Kardon sound.",
+      "included": [
+        "4K Smart Projector",
+        "Smart Bluetooth Remote",
+        "HDMI 2.1 Cable",
+        "Power Adapter",
+        "Padded Carry Bag"
+      ]
+    },
+    {
+      "id": 70102,
+      "super_cat": "entertainment",
+      "name": "Meta Quest 3 128GB Standalone VR Headset (10+ Games Installed)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 4.8,
+      "booked_count": 1420,
+      "tag": "New",
+      "per_day_rent": 420,
+      "out_of_stock": false,
+      "category": "vr",
+      "description": "Full-color passthrough mixed reality, pancake optics, 4K+ infinite display, Touch Plus haptic controllers. Preloaded with Beat Saber, Superhot, Eleven Table Tennis.",
+      "included": [
+        "Meta Quest 3 Headset",
+        "2x Touch Plus Controllers",
+        "Silicone Facial Interface",
+        "Fast Charger & Cable",
+        "Hard Shell Carry Case"
+      ]
+    },
+    {
+      "id": 70103,
+      "super_cat": "entertainment",
+      "name": "JBL PartyBox 310 Wireless Party Speaker with Bass Boost & RGB Lights",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 4.9,
+      "booked_count": 1310,
+      "tag": "Trending",
+      "per_day_rent": 380,
+      "out_of_stock": false,
+      "category": "audio",
+      "description": "240W RMS output, synchronized dynamic light show, 18-hour battery backup, telescopic handle & smooth glide wheels.",
+      "included": [
+        "JBL PartyBox 310",
+        "Power Cable",
+        "AUX & Bluetooth Ready"
+      ]
+    },
+    {
+      "id": 70104,
+      "super_cat": "entertainment",
+      "name": "120-Inch Portable Anti-Crease Projector Screen with Tripod Stand",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 4.7,
+      "booked_count": 910,
+      "tag": "",
+      "per_day_rent": 150,
+      "out_of_stock": false,
+      "category": "projectors",
+      "description": "16:9 HD 4K screen with 160° wide viewing angle, height-adjustable tripod stand, indoor and outdoor setup in 3 mins.",
+      "included": [
+        "120\" Matte White Screen",
+        "Aluminum Tripod Stand",
+        "Ground Spikes & Ropes",
+        "Carry Bag"
+      ]
+    },
+    {
+      "id": 70105,
+      "super_cat": "entertainment",
+      "name": "Dual Wireless Karaoke Microphone Set with Digital Echo Receiver",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 4.8,
+      "booked_count": 760,
+      "tag": "",
+      "per_day_rent": 180,
+      "out_of_stock": false,
+      "category": "mics",
+      "description": "UHF dual wireless metallic handheld microphones with built-in DSP chip for vocal clarity, 60m range, connects to any speaker or TV.",
+      "included": [
+        "2x UHF Wireless Mics",
+        "1x Rechargeable Receiver (6.35mm & 3.5mm)",
+        "Mic Foam Covers & Anti-Roll Rings",
+        "Charging Cable"
+      ]
     }
   ]
 }
