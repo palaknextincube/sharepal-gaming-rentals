@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent gaming gadgets in Bangalore | Zero Deposit Rentals | SharePal</title>
+  <meta name="description" content="Rent gaming gadgets in Bangalore from SharePal - India's most trusted lifestyle gear rental platform. Zero Deposit | Free Delivery | Excellent Quality | Pay on Delivery">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Confetti library for delightful booking interaction -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Notification / Announcement Bar -->
+  <div class="top-announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-badge">🎉 BANGALORE SPECIAL</div>
+      <p class="announcement-text">
+        <strong>Zero Security Deposit</strong> on all Gaming Consoles &amp; Gadgets! Free doorstep delivery in Bangalore within 2 hours.
+      </p>
+      <div class="announcement-right">
+        <a href="#products-section" class="announcement-link">Explore Deals &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Left: Logo & City Selector -->
+      <div class="header-left">
+        <a href="#" class="brand-logo" aria-label="SharePal Home">
+          <div class="logo-text">
+            <span class="logo-share">share</span><span class="logo-pal">pal</span>
+            <span class="logo-dot"></span>
+          </div>
+        </a>
+
+        <!-- City Selector Button -->
+        <button class="city-selector-btn" id="city-selector-trigger" aria-label="Select City">
+          <i data-lucide="map-pin" class="icon-city"></i>
+          <div class="city-info">
+            <span class="city-label">Location</span>
+            <span class="city-name" id="current-city-name">Bangalore</span>
+          </div>
+          <i data-lucide="chevron-down" class="icon-arrow"></i>
+        </button>
+      </div>
+
+      <!-- Center: Search & Rental Duration Selector -->
+      <div class="header-center">
+        <!-- Search Bar -->
+        <div class="search-bar-wrapper">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="global-search-input" placeholder="Search for PS5, FC26, Racing Wheel, VR..." autocomplete="off">
+          <button class="search-clear-btn" id="search-clear-btn" style="display: none;" aria-label="Clear Search">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <!-- Quick Date / Duration Selector -->
+        <button class="date-picker-trigger" id="date-picker-trigger" title="Choose rental dates">
+          <i data-lucide="calendar" class="calendar-icon"></i>
+          <div class="date-text-group">
+            <span class="date-title">Rental Period</span>
+            <span class="date-value" id="header-date-display">3 Days (Save 15%)</span>
+          </div>
+          <i data-lucide="chevron-down" class="icon-arrow"></i>
+        </button>
+      </div>
+
+      <!-- Right: Actions & Cart -->
+      <div class="header-right">
+        <!-- WhatsApp Help -->
+        <a href="https://wa.me/918047188888?text=Hi%20SharePal%2C%20I%20want%20to%20rent%20a%20gaming%20console%20in%20Bangalore" target="_blank" rel="noopener noreferrer" class="help-btn" title="Chat on WhatsApp">
+          <i data-lucide="message-circle" class="help-icon"></i>
+          <span class="help-text">Help</span>
+        </a>
+
+        <!-- Cart Trigger -->
+        <button class="cart-trigger-btn" id="cart-drawer-trigger" aria-label="View Cart">
+          <div class="cart-icon-box">
+            <i data-lucide="shopping-bag"></i>
+            <span class="cart-badge" id="header-cart-badge">0</span>
+          </div>
+          <span class="cart-btn-label">Cart</span>
+        </button>
+
+        <!-- Admin Database GUI Trigger -->
+        <a href="/admin" target="_blank" class="login-trigger-btn" title="Open Database GUI Dashboard" style="border-color: #008299; color: #008299; background: #e6f6f8;">
+          <i data-lucide="database"></i>
+          <span>DB GUI</span>
+        </a>
+
+        <!-- User Profile / Login -->
+        <button class="login-trigger-btn" id="login-modal-trigger">
+          <i data-lucide="user"></i>
+          <span>Account</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Header Search (Visible on small screens) -->
+    <div class="mobile-search-strip">
+      <div class="container">
+        <div class="mobile-search-box">
+          <i data-lucide="search"></i>
+          <input type="text" id="mobile-search-input" placeholder="Search gaming consoles, games, accessories...">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Super-Category Navigation Ribbon -->
+  <nav class="super-category-nav">
+    <div class="container super-nav-container">
+      <div class="super-nav-tabs">
+        <a href="#" class="super-tab-item" data-category="photography">
+          <i data-lucide="camera" class="tab-icon"></i>
+          <div class="tab-content">
+            <span class="tab-name">Photography</span>
+            <span class="tab-desc">GoPro, DSLR &amp; Lenses</span>
+          </div>
+        </a>
+
+        <a href="#" class="super-tab-item active" data-category="gaming">
+          <i data-lucide="gamepad-2" class="tab-icon"></i>
+          <div class="tab-content">
+            <span class="tab-name">Gaming Gadgets</span>
+            <span class="tab-desc">PS5, Xbox, VR &amp; Wheels</span>
+          </div>
+          <span class="active-indicator"></span>
+        </a>
+
+        <a href="#" class="super-tab-item" data-category="outdoor">
+          <i data-lucide="tent" class="tab-icon"></i>
+          <div class="tab-content">
+            <span class="tab-name">Outdoor Gears</span>
+            <span class="tab-desc">Trekking, Riding &amp; Camps</span>
+          </div>
+        </a>
+
+        <a href="#" class="super-tab-item" data-category="entertainment">
+          <i data-lucide="projector" class="tab-icon"></i>
+          <div class="tab-content">
+            <span class="tab-name">Entertainment</span>
+            <span class="tab-desc">Projectors &amp; Audio Mics</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-container">
+    <div class="container">
+      <ol class="breadcrumb-list">
+        <li><a href="#"><i data-lucide="home"></i> Home</a></li>
+        <li><i data-lucide="chevron-right"></i></li>
+        <li><a href="#" id="breadcrumb-city">Bangalore</a></li>
+        <li><i data-lucide="chevron-right"></i></li>
+        <li class="active">Gaming Gadgets on Rent</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Hero / Category Header Banner -->
+  <section class="hero-category-banner">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="hero-tag-pill">
+            <span class="pulse-dot"></span> Next-Gen Console Rentals
+          </div>
+          <h1 class="hero-title">
+            Gaming Consoles &amp; Gadgets on Rent in <span class="city-highlight" id="hero-city-title">Bangalore</span>
+          </h1>
+          <p class="hero-subtitle">
+            Rent the latest gaming gadgets from PS5, Xbox Series X, Meta Quest 3 VR, Logitech Racing Wheel combos preloaded with 100+ blockbuster titles.
+          </p>
+
+          <!-- USPs Pill Strip -->
+          <div class="hero-usps">
+            <div class="usp-item">
+              <div class="usp-icon-wrap"><i data-lucide="shield-check"></i></div>
+              <div class="usp-text">
+                <strong>Zero Deposit</strong>
+                <span>No money locked</span>
+              </div>
+            </div>
+            <div class="usp-item">
+              <div class="usp-icon-wrap"><i data-lucide="truck"></i></div>
+              <div class="usp-text">
+                <strong>Free Delivery &amp; Pickup</strong>
+                <span>Direct to your doorstep</span>
+              </div>
+            </div>
+            <div class="usp-item">
+              <div class="usp-icon-wrap"><i data-lucide="sparkles"></i></div>
+              <div class="usp-text">
+                <strong>100+ Games Included</strong>
+                <span>FC25, Spider-Man, GOW</span>
+              </div>
+            </div>
+            <div class="usp-item">
+              <div class="usp-icon-wrap"><i data-lucide="wallet"></i></div>
+              <div class="usp-text">
+                <strong>Pay on Delivery</strong>
+                <span>Cash, UPI, or Card</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-banner-visual">
+          <div class="visual-glow"></div>
+          <img src="https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-2-controllers/ps5-with-100-games-with-2-controllers-on-rent-sharepal-1.webp" alt="PS5 Console on Rent in Bangalore" class="hero-console-img">
+          <div class="floating-badge badge-games">
+            <i data-lucide="play-circle"></i>
+            <span>100+ Games Ready to Play</span>
+          </div>
+          <div class="floating-badge badge-price">
+            <span class="label">Starting at</span>
+            <span class="price">₹158<small>/day</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rental Duration Discount Selector Strip -->
+  <section class="duration-selector-section">
+    <div class="container">
+      <div class="duration-selector-card">
+        <div class="duration-header">
+          <div class="duration-title-group">
+            <i data-lucide="clock" class="clock-icon"></i>
+            <div>
+              <h3>Choose Rental Duration for Instant Slab Discounts</h3>
+              <p>Longer rentals unlock lower daily rates!</p>
+            </div>
+          </div>
+          <div class="active-slab-pill" id="active-slab-badge">
+            15% Savings Applied
+          </div>
+        </div>
+
+        <div class="duration-options-grid" id="duration-options-container">
+          <button class="duration-btn" data-days="1" data-discount="0">
+            <span class="days-label">1 Day</span>
+            <span class="discount-label">Standard Rate</span>
+          </button>
+          <button class="duration-btn active" data-days="3" data-discount="15">
+            <span class="popular-ribbon">Popular</span>
+            <span class="days-label">3 Days (Weekend)</span>
+            <span class="discount-label">Save 15% / day</span>
+          </button>
+          <button class="duration-btn" data-days="7" data-discount="30">
+            <span class="days-label">7 Days (1 Week)</span>
+            <span class="discount-label">Save 30% / day</span>
+          </button>
+          <button class="duration-btn" data-days="15" data-discount="45">
+            <span class="days-label">15 Days</span>
+            <span class="discount-label">Save 45% / day</span>
+          </button>
+          <button class="duration-btn" data-days="30" data-discount="60">
+            <span class="days-label">30 Days (1 Month)</span>
+            <span class="discount-label">Save 60% / day</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Products Section -->
+  <section class="products-section" id="products-section">
+    <div class="container">
+      
+      <!-- Filter Bar & Category Sub-Tabs -->
+      <div class="products-header-bar">
+        <div class="category-subnav-scroll">
+          <div class="category-subnav-pills" id="category-subnav-pills">
+            <button class="subnav-pill active" data-filter="all">
+              <span>All Gaming</span>
+              <span class="pill-count" id="count-all">23</span>
+            </button>
+            <button class="subnav-pill" data-filter="ps5">
+              <span>PS5 Consoles</span>
+              <span class="pill-count" id="count-ps5">14</span>
+            </button>
+            <button class="subnav-pill" data-filter="fc26">
+              <span>FC26 / FC25 Combos</span>
+              <span class="pill-count" id="count-fc26">6</span>
+            </button>
+            <button class="subnav-pill" data-filter="controllers">
+              <span>Multi-Controller Combos</span>
+              <span class="pill-count" id="count-controllers">10</span>
+            </button>
+            <button class="subnav-pill" data-filter="racing">
+              <span>Racing Wheels &amp; Accessories</span>
+              <span class="pill-count" id="count-racing">2</span>
+            </button>
+            <button class="subnav-pill" data-filter="new">
+              <span>New Launches</span>
+              <span class="pill-count" id="count-new">5</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Secondary Controls: Search, Stock toggle, Sort dropdown -->
+        <div class="controls-toolbar">
+          <div class="stock-filter-toggle">
+            <label class="switch-label">
+              <input type="checkbox" id="hide-oos-toggle">
+              <span class="toggle-slider"></span>
+              <span class="toggle-text">Hide Out of Stock</span>
+            </label>
+          </div>
+
+          <div class="sort-dropdown-wrapper">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="trending">🔥 Popular / Trending</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating-desc">Highest Rated</option>
+              <option value="booked-desc">Most Booked</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Count Bar -->
+      <div class="results-stats-bar">
+        <div class="results-count-text" id="results-count-text">
+          Showing <strong>23</strong> gaming gadgets in Bangalore
+        </div>
+        <div class="trust-guarantee-pill">
+          <i data-lucide="check-circle-2"></i> Sanitized &amp; Tested with 100% genuine cables
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="products-grid" id="products-grid">
+        <!-- Dynamically rendered via app.js from product-list.json -->
+      </div>
+
+      <!-- Empty State (if search/filter yields 0 items) -->
+      <div class="empty-state-card" id="empty-state" style="display: none;">
+        <div class="empty-icon"><i data-lucide="gamepad"></i></div>
+        <h3>No matching gaming gear found</h3>
+        <p>Try clearing your search query or toggling filters to see all available consoles.</p>
+        <button class="btn-primary reset-filters-btn" id="reset-filters-btn">Reset All Filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 100+ Games Library Showcase Section -->
+  <section class="games-showcase-section">
+    <div class="container">
+      <div class="showcase-card">
+        <div class="showcase-header">
+          <div class="showcase-badge">🎮 INCLUDED FREE WITH PS5</div>
+          <h2 class="showcase-title">100+ Blockbuster Games Ready to Play</h2>
+          <p class="showcase-desc">No need to buy expensive discs. Every SharePal PS5 console comes pre-activated with Deluxe &amp; EA Play libraries.</p>
+        </div>
+
+        <div class="games-marquee-wrap">
+          <div class="games-marquee-track">
+            <div class="game-tag-chip"><span class="game-icon">⚽</span> EA Sports FC 25 / FC 26</div>
+            <div class="game-tag-chip"><span class="game-icon">🕷️</span> Spider-Man 2 &amp; Miles Morales</div>
+            <div class="game-tag-chip"><span class="game-icon">🪓</span> God of War Ragnarök</div>
+            <div class="game-tag-chip"><span class="game-icon">🏏</span> Cricket 24 Official</div>
+            <div class="game-tag-chip"><span class="game-icon">🚗</span> GTA V Next-Gen Remaster</div>
+            <div class="game-tag-chip"><span class="game-icon">⚔️</span> Ghost of Tsushima Director's Cut</div>
+            <div class="game-tag-chip"><span class="game-icon">🔫</span> Call of Duty Warzone &amp; MW3</div>
+            <div class="game-tag-chip"><span class="game-icon">🏰</span> Hogwarts Legacy</div>
+            <div class="game-tag-chip"><span class="game-icon">🥊</span> Tekken 8 &amp; Mortal Kombat 1</div>
+            <div class="game-tag-chip"><span class="game-icon">🏎️</span> Gran Turismo 7</div>
+            <div class="game-tag-chip"><span class="game-icon">🧙</span> The Witcher 3: Wild Hunt</div>
+            <div class="game-tag-chip"><span class="game-icon">🚀</span> Horizon Forbidden West</div>
+            <!-- Duplicate for infinite seamless scroll -->
+            <div class="game-tag-chip"><span class="game-icon">⚽</span> EA Sports FC 25 / FC 26</div>
+            <div class="game-tag-chip"><span class="game-icon">🕷️</span> Spider-Man 2 &amp; Miles Morales</div>
+            <div class="game-tag-chip"><span class="game-icon">🪓</span> God of War Ragnarök</div>
+            <div class="game-tag-chip"><span class="game-icon">🏏</span> Cricket 24 Official</div>
+            <div class="game-tag-chip"><span class="game-icon">🚗</span> GTA V Next-Gen Remaster</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works-section">
+    <div class="container">
+      <div class="section-heading-center">
+        <span class="sub-heading-pill">EFFORTLESS RENTALS</span>
+        <h2 class="section-title">How Renting from SharePal Works</h2>
+        <p class="section-subtitle">Get your dream console setup at your Bangalore doorstep in 4 simple steps.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap"><i data-lucide="mouse-pointer-click"></i></div>
+          <h3>Select &amp; Customise</h3>
+          <p>Choose your console, number of controllers, games combo, and rental duration.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap"><i data-lucide="file-check"></i></div>
+          <h3>Zero Deposit KYC</h3>
+          <p>Complete a quick 2-minute digital identity check. No security deposit blocked.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap"><i data-lucide="package-check"></i></div>
+          <h3>Free Doorstep Delivery</h3>
+          <p>Delivered on time in a premium shockproof carry case with all cables ready to plug &amp; play.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap"><i data-lucide="rotate-ccw"></i></div>
+          <h3>Easy Doorstep Pickup</h3>
+          <p>When your rental ends, our delivery executive collects the gear right from your door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews Marquee Section ("Served more than 1 Lakh Orders") -->
+  <section class="reviews-marquee-section">
+    <div class="container text-center mb-8">
+      <h2 class="reviews-title font-ubuntu">
+        Served more than <span class="highlight-orange">1 Lakh Orders</span>
+      </h2>
+      <p class="reviews-subtitle">Rated 4.8/5 on Google Reviews across thousands of happy gamers and travelers.</p>
+    </div>
+
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="reviews-marquee-track">
+        <!-- Injected via JavaScript from extracted original reviews -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Section -->
+  <section class="impact-stats-section">
+    <div class="container">
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-icon-wrap"><i data-lucide="indian-rupee"></i></div>
+          <div class="impact-number" data-count="250">₹250Cr+</div>
+          <div class="impact-label">Saved Together by Renters</div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon-wrap"><i data-lucide="leaf"></i></div>
+          <div class="impact-number" data-count="4.5">4.5M Kg</div>
+          <div class="impact-label">CO₂e Emissions Saved via Sharing</div>
+        </div>
+
+        <div class="impact-card">
+          <div class="impact-icon-wrap"><i data-lucide="package"></i></div>
+          <div class="impact-number" data-count="100">100K+</div>
+          <div class="impact-label">Products in Active Circulation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions (Accordion) -->
+  <section class="faqs-section">
+    <div class="container">
+      <div class="faqs-card">
+        <div class="faqs-header">
+          <span class="sub-heading-pill">CLEAR ANSWERS</span>
+          <h2 class="faqs-title">Frequently Asked Questions (FAQs)</h2>
+          <p class="faqs-subtitle">Everything you need to know about gaming gadget rentals in Bangalore.</p>
+        </div>
+
+        <div class="faqs-accordion-list" id="faqs-accordion-list">
+          <!-- Populated from extracted_faqs.json via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Footer Directory -->
+  <section class="seo-directory-section">
+    <div class="container">
+      <div class="seo-grid">
+        <div class="seo-col">
+          <h3 class="seo-col-title">Action Cameras</h3>
+          <ul class="seo-link-list">
+            <li><a href="#">Action Cameras on Rent</a></li>
+            <li><a href="#">Pocket Cameras on Rent</a></li>
+            <li><a href="#">GoPro Cameras on Rent</a></li>
+            <li><a href="#">DJI Cameras on Rent</a></li>
+            <li><a href="#">DJI Drones on Rent</a></li>
+            <li><a href="#">360 Cameras on Rent</a></li>
+          </ul>
+        </div>
+
+        <div class="seo-col">
+          <h3 class="seo-col-title">Cameras &amp; Lenses</h3>
+          <ul class="seo-link-list">
+            <li><a href="#">DSLR Cameras on Rent</a></li>
+            <li><a href="#">Mirrorless Cameras on Rent</a></li>
+            <li><a href="#">iPhones on Rent</a></li>
+            <li><a href="#">DSLR Gimbal Combos</a></li>
+            <li><a href="#">Wildlife Photography Lenses</a></li>
+            <li><a href="#">Tripod and Camera Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="seo-col">
+          <h3 class="seo-col-title">Gaming Consoles</h3>
+          <ul class="seo-link-list">
+            <li><a href="#">PS5 Console on Rent</a></li>
+            <li><a href="#">PS5 with FC26 &amp; FC25</a></li>
+            <li><a href="#">Xbox Series X on Rent</a></li>
+            <li><a href="#">Meta Quest 3 VR on Rent</a></li>
+            <li><a href="#">Logitech Racing Wheels</a></li>
+            <li><a href="#">Big Screen Projector Gaming</a></li>
+          </ul>
+        </div>
+
+        <div class="seo-col">
+          <h3 class="seo-col-title">Trekking &amp; Riding</h3>
+          <ul class="seo-link-list">
+            <li><a href="#">Trekking Gear &amp; Backpacks</a></li>
+            <li><a href="#">Trekking Jackets &amp; Pants</a></li>
+            <li><a href="#">Waterproof Trekking Shoes</a></li>
+            <li><a href="#">Riding Jackets &amp; Helmets</a></li>
+            <li><a href="#">Riding Luggage &amp; Saddle Bags</a></li>
+            <li><a href="#">Winter Jackets &amp; Snow Boots</a></li>
+          </ul>
+        </div>
+
+        <div class="seo-col">
+          <h3 class="seo-col-title">Audio Visual</h3>
+          <ul class="seo-link-list">
+            <li><a href="#">4K Projectors on Rent</a></li>
+            <li><a href="#">Wireless &amp; Collar Mics</a></li>
+            <li><a href="#">Party Speakers &amp; Soundbars</a></li>
+            <li><a href="#">Vlogging Setup on Rent</a></li>
+            <li><a href="#">Camping Tents &amp; Stools</a></li>
+            <li><a href="#">Sleeping Bags &amp; Mats</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Footer -->
+  <footer class="site-footer">
+    <div class="container footer-main-content">
+      <div class="footer-links-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand-col">
+          <div class="brand-logo footer-logo">
+            <span class="logo-share">share</span><span class="logo-pal">pal</span>
+            <span class="logo-dot"></span>
+          </div>
+          <p class="footer-bio">
+            India's most trusted lifestyle gear rental platform. Experience the best gaming consoles, cameras, trekking gear, and entertainment equipment with zero deposit.
+          </p>
+          <div class="footer-social-icons">
+            <a href="#" aria-label="Instagram" class="social-icon"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="YouTube" class="social-icon"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="LinkedIn" class="social-icon"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="Twitter" class="social-icon"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: SharePal -->
+        <div class="footer-nav-col">
+          <h4>Sharepal</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Why SharePal</a></li>
+            <li><a href="#">CarePal Protection</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Press &amp; Media</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Become a Pal -->
+        <div class="footer-nav-col">
+          <h4>Become a Pal</h4>
+          <ul>
+            <li><a href="#">Sharepal for Creators</a></li>
+            <li><a href="#">Careers <span class="nav-badge">Hiring</span></a></li>
+            <li><a href="#">Sharepal for Brands</a></li>
+            <li><a href="#">Asset Funding Program <span class="nav-badge">New</span></a></li>
+            <li><a href="#">Rent Your Gear</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Information -->
+        <div class="footer-nav-col">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="#">How it works?</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Identity Verification</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Life at Sharepal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Policies & Support -->
+        <div class="footer-nav-col">
+          <h4>Policies &amp; Contact</h4>
+          <ul>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Damage Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="mailto:care@sharepal.in" class="footer-email">care@sharepal.in</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">
+          &copy; 2026 <strong>SWNAC E-Kiraya Services Pvt Ltd</strong>. All rights reserved.
+        </p>
+        <p class="made-with-love">
+          Made with <span class="heart-icon">❤️</span> for India
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS & DRAWERS ==================== -->
+
+  <!-- Cart Slide-Over Drawer -->
+  <div class="drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <i data-lucide="shopping-bag"></i>
+          <h3>Your Rental Cart (<span id="cart-items-count">0</span>)</h3>
+        </div>
+        <button class="drawer-close-btn" id="cart-drawer-close" aria-label="Close Cart">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <!-- City & Rental Dates Ribbon in Cart -->
+      <div class="cart-context-ribbon">
+        <div class="context-item">
+          <i data-lucide="map-pin"></i> <span id="cart-city-label">Bangalore</span>
+        </div>
+        <div class="context-item">
+          <i data-lucide="calendar"></i> <span id="cart-duration-label">3 Days Duration</span>
+        </div>
+      </div>
+
+      <!-- Cart Item List -->
+      <div class="cart-items-body" id="cart-items-body">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Cart Footer Summary -->
+      <div class="cart-footer" id="cart-footer">
+        <div class="coupon-box">
+          <input type="text" id="coupon-input" placeholder="Promo code (Try GAMEON10)">
+          <button class="coupon-apply-btn" id="apply-coupon-btn">Apply</button>
+        </div>
+        <div class="coupon-msg" id="coupon-msg"></div>
+
+        <div class="bill-summary">
+          <div class="bill-row">
+            <span>Rental Amount (<span id="summary-days">3</span> days)</span>
+            <span id="summary-subtotal">₹0</span>
+          </div>
+          <div class="bill-row discount-row" id="summary-discount-row" style="display: none;">
+            <span>Promo Discount (10%)</span>
+            <span id="summary-discount">-₹0</span>
+          </div>
+          <div class="bill-row">
+            <span>Security Deposit</span>
+            <span class="free-text">₹0 (Zero Deposit)</span>
+          </div>
+          <div class="bill-row">
+            <span>Doorstep Delivery &amp; Pickup</span>
+            <span class="free-text">FREE</span>
+          </div>
+          <div class="bill-divider"></div>
+          <div class="bill-row total-row">
+            <span>Total Payable Amount</span>
+            <span class="total-amount" id="summary-total">₹0</span>
+          </div>
+        </div>
+
+        <button class="btn-checkout" id="btn-checkout">
+          <span>Proceed to Book (Zero Deposit)</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+
+        <div class="checkout-guarantee">
+          <i data-lucide="shield-check"></i> Pay on Delivery available &bull; 100% Refundable cancellations
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail & Quick View Modal -->
+  <div class="modal-overlay" id="product-modal-overlay">
+    <div class="product-modal-dialog">
+      <button class="modal-close-btn" id="product-modal-close" aria-label="Close Modal">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-product-content" id="modal-product-body">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- City Selector Modal -->
+  <div class="modal-overlay" id="city-modal-overlay">
+    <div class="city-modal-dialog">
+      <div class="modal-title-row">
+        <h3>Select Your City</h3>
+        <button class="modal-close-btn" id="city-modal-close" aria-label="Close City Selector">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+      <p class="modal-subtext">Rental items and delivery slots are tailored to your chosen location.</p>
+      
+      <div class="city-grid" id="city-grid">
+        <button class="city-card active" data-city="Bangalore">
+          <span class="city-icon">🏙️</span>
+          <span class="city-name">Bangalore</span>
+          <span class="city-badge">Fast 2hr Delivery</span>
+        </button>
+        <button class="city-card" data-city="Mumbai">
+          <span class="city-icon">🌊</span>
+          <span class="city-name">Mumbai</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Delhi NCR">
+          <span class="city-icon">🏛️</span>
+          <span class="city-name">Delhi NCR</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Hyderabad">
+          <span class="city-icon">💎</span>
+          <span class="city-name">Hyderabad</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Pune">
+          <span class="city-icon">🏞️</span>
+          <span class="city-name">Pune</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Kolkata">
+          <span class="city-icon">🌉</span>
+          <span class="city-name">Kolkata</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Chennai">
+          <span class="city-icon">🏖️</span>
+          <span class="city-name">Chennai</span>
+          <span class="city-badge">Available</span>
+        </button>
+        <button class="city-card" data-city="Goa">
+          <span class="city-icon">🌴</span>
+          <span class="city-name">Goa</span>
+          <span class="city-badge">Available</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rental Date Picker Modal -->
+  <div class="modal-overlay" id="date-modal-overlay">
+    <div class="date-modal-dialog">
+      <div class="modal-title-row">
+        <h3>Select Rental Duration &amp; Dates</h3>
+        <button class="modal-close-btn" id="date-modal-close" aria-label="Close Date Picker">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="date-picker-body">
+        <div class="date-inputs-row">
+          <div class="date-input-group">
+            <label for="start-date-input">Start Date (Delivery)</label>
+            <input type="date" id="start-date-input" class="custom-date-field">
+          </div>
+          <div class="date-input-group">
+            <label for="end-date-input">End Date (Pickup)</label>
+            <input type="date" id="end-date-input" class="custom-date-field">
+          </div>
+        </div>
+
+        <div class="quick-duration-presets">
+          <span class="presets-label">Popular Presets:</span>
+          <div class="presets-buttons">
+            <button class="preset-btn" data-days="1">1 Day</button>
+            <button class="preset-btn active" data-days="3">3 Days (Weekend Special)</button>
+            <button class="preset-btn" data-days="7">7 Days (1 Week)</button>
+            <button class="preset-btn" data-days="15">15 Days</button>
+            <button class="preset-btn" data-days="30">30 Days</button>
+          </div>
+        </div>
+
+        <div class="discount-calculation-box" id="modal-discount-info">
+          <div class="calc-icon"><i data-lucide="sparkles"></i></div>
+          <div class="calc-text">
+            <strong>Selected: <span id="modal-selected-days">3</span> Days</strong>
+            <p>You unlocked a <strong>15% slab discount</strong> on daily rental rates!</p>
+          </div>
+        </div>
+
+        <button class="btn-primary w-full" id="confirm-dates-btn">
+          Confirm Rental Dates
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success / Order Placed Modal -->
+  <div class="modal-overlay" id="success-modal-overlay">
+    <div class="success-modal-dialog">
+      <div class="success-animation-circle">
+        <i data-lucide="check" class="success-check-icon"></i>
+      </div>
+      <h2>Rental Order Confirmed! 🎉</h2>
+      <p class="success-order-id">Order Reference: <strong>#SP-BLR-89241</strong></p>
+      <p class="success-subtext">
+        Our Bangalore logistics team is preparing your sanitized gaming setup. Our support executive will connect on WhatsApp within 10 minutes for quick zero-deposit verification.
+      </p>
+
+      <div class="success-details-card">
+        <div class="detail-row">
+          <span>City:</span>
+          <strong id="success-city">Bangalore</strong>
+        </div>
+        <div class="detail-row">
+          <span>Rental Duration:</span>
+          <strong id="success-duration">3 Days</strong>
+        </div>
+        <div class="detail-row">
+          <span>Deposit:</span>
+          <strong class="free-text">₹0 (Zero Deposit)</strong>
+        </div>
+        <div class="detail-row">
+          <span>Payment Mode:</span>
+          <strong>Pay on Delivery</strong>
+        </div>
+      </div>
+
+      <button class="btn-primary w-full" id="success-modal-close-btn">Done &amp; Continue Browsing</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Floating Mobile Navigation / Cart Bar -->
+  <div class="mobile-sticky-bottom-bar">
+    <a href="#products-section" class="mobile-bar-btn">
+      <i data-lucide="gamepad-2"></i>
+      <span>Products</span>
+    </a>
+    <button class="mobile-bar-btn" id="mobile-date-btn">
+      <i data-lucide="calendar"></i>
+      <span><span id="mobile-duration-text">3 Days</span></span>
+    </button>
+    <a href="https://wa.me/918047188888" target="_blank" class="mobile-bar-btn whatsapp-mobile">
+      <i data-lucide="message-circle"></i>
+      <span>WhatsApp</span>
+    </a>
+    <button class="mobile-bar-btn cart-mobile" id="mobile-cart-btn">
+      <div class="relative">
+        <i data-lucide="shopping-bag"></i>
+        <span class="mobile-cart-badge" id="mobile-cart-count">0</span>
+      </div>
+      <span>Cart</span>
+    </button>
+  </div>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

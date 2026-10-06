@@ -1,0 +1,606 @@
+{
+  "products": [
+    {
+      "id": 18273,
+      "name": "PS5 + Games (100+) + 1 Controller",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-1-controller/ps5-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.6,
+      "booked_count": 649,
+      "tag": "Trending",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20242,
+      "name": "PS5 All in one Combo + 2 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-with-100-games-with-2-controllers/ps5-with-2-controllers-with-ea-play-with-ps-plus-deluxe-subscription-combo-on-rent-sharepal-1.webp",
+      "rating": 4.5,
+      "booked_count": 604,
+      "tag": "Trending",
+      "per_day_rent": 440,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 18255,
+      "name": "PS5 + Games (100+) + 2 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-2-controllers/ps5-with-100-games-with-2-controllers-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 397,
+      "tag": "Trending",
+      "per_day_rent": 260,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20105,
+      "name": "FC25 + 2 Controllers Combo",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-fc25/ps5-with-fc25-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 209,
+      "tag": "Trending",
+      "per_day_rent": 165,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 8185,
+      "name": "PS5 + 1 Controller (Disc or Digital) (No Games Included)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-1-controller/ps5-console-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 236,
+      "tag": "",
+      "per_day_rent": 160,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 18117,
+      "name": "PS5 + EA Play + 2 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-combo-with-2-controllers/ps5-ea-play-combo-with-2-controllers-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 167,
+      "tag": "",
+      "per_day_rent": 260,
+      "out_of_stock": true,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 19716,
+      "name": "PS5 All in one Combo + 1 Controller",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-with-100-games-with-1-controller/ps5-with-controller-with-ea-play-with-ps-plus-deluxe-subscription-combo-on-rent-sharepal-1.webp",
+      "rating": 4.5,
+      "booked_count": 187,
+      "tag": "Trending",
+      "per_day_rent": 260,
+      "out_of_stock": true,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 19680,
+      "name": "PS5 + 2 Controllers (Disc or Digital) (No Games Included)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-2%20controllers/ps5-console-with-2-controllers-on-rent-sharepal-1.webp",
+      "rating": 4.2,
+      "booked_count": 210,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 17795,
+      "name": "God Of War Ragnarök + 1 Controller (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-god-of-war-ragnarok/ps5-with-god-of-war-ragnarok-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.6,
+      "booked_count": 164,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 18055,
+      "name": "PS5 + EA Play + 1 Controller",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ea-play-combo-with-1-controller/ps5-with-controller-with-ea-play-combo-on-rent-sharepal-1.webp",
+      "rating": 4.5,
+      "booked_count": 211,
+      "tag": "",
+      "per_day_rent": 180,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20104,
+      "name": "Uncharted Series + 1 Controller (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-uncharted/ps5-with-uncharted-legacy-of-thieves-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.6,
+      "booked_count": 171,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20103,
+      "name": "Cricket 24 + 2 Controllers (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-cricket-24/ps5-with-cricket-24-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 186,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 36028,
+      "name": "PS5 + FC26 + 1 Controller",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-1-controller/ps5-with-fifa-26-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 2527,
+      "tag": "New",
+      "per_day_rent": 310,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20102,
+      "name": "Ghost of Tsushima + 1 Controller (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-ghost-of-tsushima/ps5-with-ghost-of-tsushima-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.6,
+      "booked_count": 140,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20224,
+      "name": "PS5 Mega Racing Wheel Combo",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-mega-racing-combo/ps5-with-controller-with-ps-plus-deluxe-subscription-with-ea-play-with-wheel-combo-on-rent-sharepal-1%20(1).webp",
+      "rating": 4.8,
+      "booked_count": 139,
+      "tag": "",
+      "per_day_rent": 310,
+      "out_of_stock": true,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 36039,
+      "name": "PS5 + FC26 + 2 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-2-controllers/ps5-with-fifa-26-with-2-controllers-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 1524,
+      "tag": "New",
+      "per_day_rent": 310,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20098,
+      "name": "FC24 + 2 Controllers (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-fc24/ps5-with-fc24-with-100-games-with-2-controllerS-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 165,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": true,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 36050,
+      "name": "PS5 + FC26 + 4 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa26-4-controllers/ps5-with-fifa-26-with-4-controllers-on-rent-sharepal-1.webp",
+      "rating": 4.8,
+      "booked_count": 1224,
+      "tag": "New",
+      "per_day_rent": 310,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 20100,
+      "name": "Spider-Man Miles Morales + 1 Controller (Digital Game)",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-spiderman-miles-morales/ps5-with-spiderman-miles-morales-with-100-games-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 4.6,
+      "booked_count": 123,
+      "tag": "",
+      "per_day_rent": 200,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 37512,
+      "name": "PS5 + FC27 + 2 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-2-controllers/ps5-with-fifa-27-with-2-controllers-on-rent-sharepal-1.webp",
+      "rating": 0,
+      "booked_count": 652,
+      "tag": "New",
+      "per_day_rent": 300,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 37501,
+      "name": "PS5 + FC27 + 1 Controller",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-1-controller/ps5-with-fifa-27-with-1-controller-on-rent-sharepal-1.webp",
+      "rating": 0,
+      "booked_count": 658,
+      "tag": "New",
+      "per_day_rent": 250,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 37534,
+      "name": "PS5 + FC27 + 4 Controllers",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-fifa27-4-controllers/ps5-with-fifa-27-with-4-controllers-on-rent-sharepal-1.webp",
+      "rating": 0,
+      "booked_count": 651,
+      "tag": "New",
+      "per_day_rent": 350,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    },
+    {
+      "id": 37616,
+      "name": "PlayStation Portal Remote Player",
+      "image": "https://images.sharepal.in/categories/gaming-consoles/ps5/ps-portal-remote-player/ps-portal-on-rent-1.webp",
+      "rating": 0,
+      "booked_count": 10000,
+      "tag": "Vote to Launch",
+      "per_day_rent": 158.25,
+      "out_of_stock": false,
+      "description": "Experience next-gen 4K 120FPS gaming with ultra-high speed SSD, ray tracing, 3D audio, and 100+ preloaded blockbuster titles ready to play.",
+      "included": [
+        "PS5 Console",
+        "DualSense Controller",
+        "High-Speed HDMI 2.1 Cable",
+        "Power Cable",
+        "100+ Preloaded Games",
+        "Shockproof Travel Carrying Case"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 2,
+      "order_ref": "SP-BAN-32944",
+      "customer_name": "Palak MongoDB User",
+      "customer_phone": "+91 9876543210",
+      "city": "Bangalore",
+      "rental_days": 3,
+      "start_date": "2026-10-06",
+      "end_date": "",
+      "items": [
+        {
+          "id": 18273,
+          "name": "PS5 + Games + 1 Controller",
+          "daily_rate": 170,
+          "total_price": 510
+        }
+      ],
+      "subtotal": 510,
+      "discount": 0,
+      "total_amount": 510,
+      "security_deposit": 0,
+      "payment_mode": "Pay on Delivery (Zero Deposit)",
+      "status": "CONFIRMED",
+      "createdAt": "2026-10-06T15:11:23.249Z"
+    },
+    {
+      "id": 1,
+      "order_ref": "SP-BAN-11446",
+      "customer_name": "Palak Gamer",
+      "customer_phone": "+91 9876500000",
+      "city": "Bangalore",
+      "rental_days": 3,
+      "start_date": "2026-10-06",
+      "end_date": "",
+      "items": [
+        {
+          "id": 18273,
+          "name": "PS5 + Games + 1 Controller",
+          "daily_rate": 170,
+          "total_price": 510
+        }
+      ],
+      "subtotal": 510,
+      "discount": 0,
+      "total_amount": 510,
+      "security_deposit": 0,
+      "payment_mode": "Pay on Delivery (Zero Deposit)",
+      "status": "CONFIRMED",
+      "created_at": "2026-10-06T15:05:30.507Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Satyaki",
+      "city": "Kolkata",
+      "category": "Trekking Gear",
+      "rating": 5,
+      "text": "I would recommend SharePal for anybody looking to rent trekking gears, on time delivery, condition of products delivered were very good, super transparent deposit return policy."
+    },
+    {
+      "id": 2,
+      "name": "Afrana",
+      "city": "Bangalore",
+      "category": "Gaming Console",
+      "rating": 5,
+      "text": "Have used their services twice now. They never disappoint. Quick responses, polite, transparent deposit refund policy. Product was in mint condition. Delivered and picked up without any hassle. Highly recommend!"
+    },
+    {
+      "id": 3,
+      "name": "Kanthikiran",
+      "city": "Bangalore",
+      "category": "Riding Gear",
+      "rating": 5,
+      "text": "It’s an amazing service, starting from the quality of the gear provided to the pickup and delivery experience. Truly hassle-free zero deposit rental."
+    },
+    {
+      "id": 4,
+      "name": "Amal",
+      "city": "Bangalore",
+      "category": "Gaming Console",
+      "rating": 5,
+      "text": "I am a regular customer and order PS5 for weekends. It’s very affordable and booking an order is super easy. Highly satisfied with the games collection."
+    },
+    {
+      "id": 5,
+      "name": "Pankaj",
+      "city": "Mumbai",
+      "category": "Action Cameras",
+      "rating": 5,
+      "text": "The experience with SharePal is awesome. The camera and service provided by them is good. I recommend SharePal to everyone."
+    },
+    {
+      "id": 6,
+      "name": "Jayaraman",
+      "city": "Mumbai",
+      "category": "Riding Gear",
+      "rating": 5,
+      "text": "Great company amazing products at affordable prices and great service. I would recommend SharePal to everyone."
+    },
+    {
+      "id": 7,
+      "name": "Manish",
+      "city": "Mumbai",
+      "category": "Gaming Console",
+      "rating": 5,
+      "text": "I like the way SharePal works and really enjoyed the PS5. Will order again. Thanks SharePal team!"
+    },
+    {
+      "id": 8,
+      "name": "Rakesh",
+      "city": "Mumbai",
+      "category": "Trekking Gear",
+      "rating": 5,
+      "text": "Ordered gear in mint condition, very well sanitized. Timely delivery and seamless pickup."
+    },
+    {
+      "id": 9,
+      "name": "Shruti",
+      "city": "Mumbai",
+      "category": "Winter Wear",
+      "rating": 5,
+      "text": "Right from the time I saw their website, till I got my gear, the entire experience with SharePal was smooth and delightful."
+    },
+    {
+      "id": 10,
+      "name": "Amit",
+      "city": "Delhi",
+      "category": "Riding Gear",
+      "rating": 5,
+      "text": "Awesome experience. Please be the way you are. Received excellent gear in walk-in condition. Keep it up!"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How can I rent from SharePal?",
+      "answer": "Select your desired gaming console or gadget, choose your rental dates, complete a quick 2-minute digital KYC verification, and place your order with Pay on Delivery or online payment. We deliver right to your doorstep in Bangalore with zero security deposit!"
+    },
+    {
+      "id": 2,
+      "question": "If I rent multiple products, do I need to extend the rental duration for all or partial extension is possible?",
+      "answer": "Partial extensions are completely supported! You can easily extend individual products or your entire order directly from your order dashboard or by simply sending a message to our WhatsApp support team."
+    },
+    {
+      "id": 3,
+      "question": "When does the rental start?",
+      "answer": "Your rental period starts on the start date you selected at checkout. We ensure the console is delivered either before or on the morning of your start date so you get the full rental duration to enjoy your gaming sessions."
+    },
+    {
+      "id": 4,
+      "question": "What will be the condition of the products at the time of delivery?",
+      "answer": "All gaming consoles and controllers are 100% tested, deeply sanitized, and packed in shockproof carry bags with all required high-speed HDMI 2.1 cables, power cables, and 100+ preloaded games in excellent condition."
+    },
+    {
+      "id": 5,
+      "question": "Why is verification required?",
+      "answer": "Since SharePal provides zero security deposit rentals on expensive premium gadgets, a simple 2-minute digital KYC (Government ID and address verification) helps us maintain trust and security for our community."
+    }
+  ],
+  "votes": {
+    "portal": 10000
+  },
+  "kyc": []
+}
